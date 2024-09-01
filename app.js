@@ -11,11 +11,20 @@ async function fetchCookieUpgrade() {
     
   function displayUpgrades (arrayOfUpgrades) {
     arrayOfUpgrades.forEach(function(upgrade) {
-      const name = document.createElement('div');
+      const name = document.createElement('p');
+      const cost = document.createElement('p')
+      const increase = document.createElement('p')
+      const button = document.createElement('button')
       name.innerText = upgrade.name
+      cost.innerText = upgrade.cost
+      increase.innerText = upgrade.increase
+      button.innerText = "BUY"
       console.log(upgrade)
       cookieShop.appendChild(name)
-      
+      cookieShop.appendChild(cost)
+      cookieShop.appendChild(increase)
+      cookieShop.appendChild(button)
+      button.classList.add('buyButton')
     })
   }
 
@@ -23,6 +32,7 @@ async function fetchCookieUpgrade() {
   const count = document.getElementById("count");
   const perSecond = document.getElementById("perSecond");
   const cookieShop = document.getElementById("cookieShop");
+  const cost = document.getElementById("cost");
 
 let cookieCount = 0;
 let cookiePerSecond = 1;
@@ -45,3 +55,10 @@ function updateCps() {
 
 setInterval(updateCps, 1000);
 
+
+button.addEventListener("click", ()=> {
+  if (cookieCount != null) {
+    cookieCount -= upgrade.cost;
+    cookiePerSecond += displayUpgrades.increase;
+  }}
+)

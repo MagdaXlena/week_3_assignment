@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: white;
+    color: black;
 }
 
 body {
-background-color:#a52a2abe; 
+background-color:#1dd1e9be; 
 position: relative;
 margin-top: 50px;
 text-align: center;
@@ -54,3 +54,24 @@ top: 20px
 
 }
 
+.cShop {
+    position: relative;
+    top: 300px;
+}
+
+.cShop {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    column-gap: 1px;
+    position: relative;
+    justify-items: center;
+    width: 700px;
+}
+
+.buyButton {
+    background-color: blue;
+    width: 40px;
+    color: white;
+
+}
