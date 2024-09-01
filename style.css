@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+background-color:#a52a2abe; 
+position: relative;
+margin-top: 50px;
+text-align: center;
+
+}
+
+.title {
+    font-size: 50px;
+}
+.cookieImg {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 80px;
+   }
+
+   .cookieImg:hover {
+    cursor: pointer;
+    transform: scale(1.8);
+   }
+
+#cookieInfo {
+    position: relative;
+    top: 180px;
+}
+
+.cookiesPerSecond {
+border: white 1px solid;
+border-radius: 20px;
+display: inline;
+padding-inline: 100px;
+padding-top: 5px;
+padding-bottom: 5px;;
+margin: 50px;
+position: relative;
+top: 20px
+
+}
+
+.shop {
+    position: relative;
+    top: 250px
+
+}
+
