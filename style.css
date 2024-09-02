@@ -2,9 +2,9 @@
 body {
     display: grid;
     place-items: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    height: 100vh;
     background: repeating-linear-gradient(
   to right,
   #ecca8f,
@@ -12,6 +12,7 @@ body {
   #f8ce84 15px,
   #fdd389 25px
 );
+
 }
  h1 {
     font-size: 60px
@@ -40,7 +41,6 @@ h2 {
 }
 
 
-  
 
 
 .left h3 {
@@ -49,13 +49,28 @@ h2 {
     margin-bottom: 20px;
 }
 .buyButton {
-    color: black
+    color: black;
     background-color: lightgray;
-    height: 25px
+    height: 20px;
+    width: 40px;
+    font-size: 10px;
+
 }
 .right {
     position: absolute;
     right: 0;
     top: 100px;;
 
+}
+
+.perSecond {
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.cShop {
+    font-size: 15px;
 }

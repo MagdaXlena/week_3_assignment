@@ -16,8 +16,8 @@ async function fetchCookieUpgrade() {
       const increase = document.createElement('p')
       const button = document.createElement('button')
       name.innerText = upgrade.name
-      cost.innerText = upgrade.cost
-      increase.innerText = upgrade.increase
+      cost.innerText = "Cost: "+upgrade.cost
+      increase.innerText = "Per Second: "+upgrade.increase
       button.innerText = "BUY"
       console.log(upgrade)
       cookieShop.appendChild(name)
