@@ -74,6 +74,7 @@ loadStorage();
 button.addEventListener("click", ()=> {
   if (cookieCount > upgrade.cost) {
     cookieCount -= upgrade.cost;
-    cookiePerSecond += displayUpgrades.increase;
+    cookiePerSecond += upgrade.increase;
+    updateCounts();
   }}
 )
