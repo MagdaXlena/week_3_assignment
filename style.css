@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 700;
     color: black;
 }
 
@@ -10,14 +11,20 @@ background-color:#1dd1e9be;
 position: relative;
 margin-top: 50px;
 text-align: center;
-
+background: repeating-linear-gradient(
+  to right,
+  #ecca8f,
+  #f9c05e 15px,
+  #f8ce84 15px,
+  #fdd389 25px
+);
 }
 
 .title {
     font-size: 50px;
 }
 .cookieImg {
-    height: 150px;
+    height: 275px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +34,7 @@ text-align: center;
 
    .cookieImg:hover {
     cursor: pointer;
-    transform: scale(1.8);
+    transform: scale(1.4);
    }
 
 #cookieInfo {
@@ -63,10 +70,7 @@ top: 20px
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: auto;
-    column-gap: 1px;
-    position: relative;
-    justify-items: center;
-    width: 700px;
+  
 }
 
 .buyButton {
@@ -74,4 +78,9 @@ top: 20px
     width: 40px;
     color: white;
 
+}
+
+.cookieCount {
+    font-size: 40px;
+    
 }

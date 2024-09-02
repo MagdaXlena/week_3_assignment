@@ -47,13 +47,28 @@ count.innerText = cookieCount
 perSecond.innerText = cookiePerSecond
 }
 
-
-function updateCps() {
-  cookiePerSecond+=1;
-  updateCounts();
+function updateStorage() {
+  localStorage.setItem("cookieCount", cookieCount);
+  localStorage.setItem("cookiePerSecond", cookiePerSecond);
 }
 
-setInterval(updateCps, 1000);
+function update() {
+  cookieCount+=cookiePerSecond;
+  console.log(cookieCount);
+  updateCounts();
+  updateStorage();
+}
+
+setInterval(update, 1000);
+
+function loadStorage() {
+  if(localStorage.getItem("cookieCount") !=null && localStorage.getItem("cookiePerSecond") !=null) {
+    cookieCount = JSON.parse(localStorage.getItem("cookieCount"));
+    cookiePerSecond = JSON.parse(localStorage.getItem("cookiePerSecond"));
+  }
+}
+
+loadStorage();
 
 
 button.addEventListener("click", ()=> {
