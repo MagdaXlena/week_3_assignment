@@ -13,28 +13,49 @@ body {
   #fdd389 25px
 );
 }
+ h1 {
+    font-size: 60px
+ }
 
 .main {
     display: flex;
-    gap: 300px;
+    gap: 200px;
     font-size: 20px;
+
 }
-.cookieImg {
-    height: 200px;;
+h2 {
+    font-size: 100px;
 }
 
-.cShop {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    width: 600px;
+.shop {
+    font-size: 100px;
 }
+.cookieImg {
+    height: 300px;
+}
+
+.cookieImg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+  
+
+
 .left h3 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 .buyButton {
-    color: white;
-    background-color: brown;
-    width: 50;
+    color: black
+    background-color: lightgray;
+    height: 25px
+}
+.right {
+    position: absolute;
+    right: 0;
+    top: 100px;;
+
 }

@@ -25,6 +25,13 @@ async function fetchCookieUpgrade() {
       cookieShop.appendChild(increase)
       cookieShop.appendChild(button)
       button.classList.add('buyButton')
+      button.addEventListener("click", ()=> {
+        if (cookieCount > upgrade.cost) {
+          cookieCount -= upgrade.cost;
+          cookiePerSecond += upgrade.increase;
+          updateCounts();
+        }}
+      )
     })
   }
 
@@ -71,10 +78,4 @@ function loadStorage() {
 loadStorage();
 
 
-button.addEventListener("click", ()=> {
-  if (cookieCount > upgrade.cost) {
-    cookieCount -= upgrade.cost;
-    cookiePerSecond += upgrade.increase;
-    updateCounts();
-  }}
-)
+
